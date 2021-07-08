@@ -14,7 +14,9 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background: url(https://images-na.ssl-images-amazon.com/images/I/71k5sg2ZhuL._AC_SL1500_.jpg);
+  padding-top: 5px;
+  background-size: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

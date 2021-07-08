@@ -1,0 +1,83 @@
+.container {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container__characterAlive {
+  background-color: hsl(175, 100%, 25%);
+  margin-left: 4px;
+  padding: 0px 4px 2px 4px;
+  margin-bottom: 4px;
+}
+.container__characterDead {
+  background-color: hsl(0, 100%, 34%);
+  margin-left: 4px;
+  padding: 0px 4px 2px 4px;
+  margin-bottom: 4px;
+}
+.dataAlive {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: hsl(175, 100%, 10%);
+}
+.dataDead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: hsl(0, 100%, 15%);
+}
+.container__p {
+  margin: 3px;
+  font-size: 15px;
+}
+
+.originNameAlive {
+  background-color: hsl(175, 100%, 10%);
+  width: 180px;
+  padding: 2px;
+  font-size: 12px;
+  margin-right: 5px;
+  text-align: start;
+}
+.originNameDead {
+  background-color: hsl(0, 100%, 15%);
+  width: 96.5%;
+  padding: 2px;
+  font-size: 12px;
+  text-align: start;
+}
+.previewPage {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: url("./img/preview.png");
+  top: 5%;
+  left: 5%;
+  cursor: pointer;
+}
+.nextPage {
+  width: 100px;
+  height: 100px;
+  background: url("./img/next.png");
+  top: 5%;
+  right: 5%;
+  position: absolute;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+  .previewPage {
+    left: 0%;
+  }
+  .nextPage {
+    right: 0%;
+  }
+}
